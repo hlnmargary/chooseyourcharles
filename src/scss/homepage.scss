@@ -1,0 +1,77 @@
+body{
+  height: 100vh;
+  width: 100vw;
+}
+
+.faceContainer{
+height: 100%;
+}
+
+
+g {
+  display: none;
+}
+
+.visible {
+  display: block;
+}
+
+.face {
+  fill: none;
+  stroke-width: 3px;
+  stroke: #000;
+}
+
+.glasses,
+.ej,
+.lunette_rondes,
+.lunette_ingenieur{
+  stroke: #000;
+  stroke-width: 2px;
+  fill: #000;
+}
+
+.rich-hairstyles,
+.hairstylesList,
+.punk,
+.afro,
+.mi-long,
+.hairstyle-swag {
+  stroke: #000;
+  stroke-width: 3px;
+  fill: rgb(242, 196, 43);
+  stroke-miterlimit: 10;
+}
+
+.mouth {
+  stroke: #000;
+  stroke-width: 2px;
+  fill: rgb(246, 214, 250);
+}
+
+.beardy,
+.gros_bouc,
+.rouflaquettes,
+.beard,
+.mouth_beard,
+.moustache_italiano {
+  stroke: #000;
+  stroke-width: 3px;
+  fill: rgb(242, 196, 43);
+  stroke-miterlimit: 10;
+}
+
+.cigarette {
+  stroke: #000;
+  stroke-width: 3px;
+  fill: rgb(255, 255, 255);
+}
+
+.piercing-right,
+.piercing-nose {
+  stroke: #000;
+  stroke-width: 3px;
+  fill: rgb(255, 255, 0);
+}
+
+
