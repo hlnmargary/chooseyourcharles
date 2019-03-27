@@ -8,6 +8,16 @@ var glassesChoice = document.querySelectorAll('.glassesChoice');
 var glassesList = document.querySelectorAll('.glassesList');
 var hatsChoice = document.querySelectorAll('.hatsChoice');
 var hatsList = document.querySelectorAll('.hatsList');
+var accessoriesChoice = document.querySelectorAll('.accessoriesChoice');
+var accessoriesList = document.querySelectorAll('.accessoriesList');
+var piercingsChoice = document.querySelectorAll('.piercingsChoice');
+var piercingsList = document.querySelectorAll('.piercingsList');
+var customList = document.querySelectorAll('.customContainer li');
+var itemContainers = document.querySelectorAll('#itemContainer');
+
+
+
+// itemContainers.style.display = "none";
 
 function setCharles(choiceList, styleList) {
   for (let i = 0; i < choiceList.length; i++) {
@@ -29,3 +39,20 @@ setCharles(beardsChoice, beardsList);
 setCharles(hairstylesChoice, hairstylesList);
 setCharles(glassesChoice, glassesList);
 setCharles(hatsChoice, hatsList);
+setCharles(accessoriesChoice, accessoriesList);
+setCharles(piercingsChoice, piercingsList);
+
+
+
+for (let i = 0; i < customList.length; i++) {
+  customList[i].addEventListener('click', function () {
+    for (let j = 0; j < itemContainers.length; j++) {
+      console.log('kfkjhgnkj');
+      if (customList[i].dataset.nav === itemContainers[j].dataset.container) {
+        itemContainers[j].style.display = "flex";
+      } else {
+        itemContainers[j].style.display = "none";
+      }
+    }
+  })
+};
