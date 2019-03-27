@@ -1,6 +1,31 @@
 var glassesList = document.querySelectorAll('.glassesList');
-var hairstylesList = document.querySelectorAll('.hairstylesList');
 var beardsList = document.querySelectorAll('.beardsList');
 var hatsList = document.querySelectorAll('.hatsList');
+var beardsChoice = document.querySelectorAll('.beardsChoice');
+var hairstylesChoice = document.querySelectorAll('.hairstylesChoice');
+var hairstylesList = document.querySelectorAll('.hairstylesList');
+var glassesChoice = document.querySelectorAll('.glassesChoice');
+var glassesList = document.querySelectorAll('.glassesList');
+var hatsChoice = document.querySelectorAll('.hatsChoice');
+var hatsList = document.querySelectorAll('.hatsList');
+
+function setCharles(choiceList, styleList) {
+  for (let i = 0; i < choiceList.length; i++) {
+    choiceList[i].addEventListener('click', function () {
+      for (let j = 0; j < styleList.length; j++) {
+        if (choiceList[i].dataset.choice === styleList[j].dataset.style) {
+          console.log('ih');
+          styleList[j].style.display = "block";
+        } else {
+          styleList[j].style.display = "none";
+        }
+      }
+    });
+  };
+}
 
 
+setCharles(beardsChoice, beardsList);
+setCharles(hairstylesChoice, hairstylesList);
+setCharles(glassesChoice, glassesList);
+setCharles(hatsChoice, hatsList);
