@@ -1,43 +1,65 @@
+body{
+  background-color:#ffffff;
+  
+}
+
+// .bigstokes{
+//   position: absolute;
+//   background-color: rgb(0, 0, 0);
+//   border-radius: 2px;
+//   height: 4px;
+//   width: 100vw;
+//   margin: 0 auto;
+//   top: 80px;
+// }  
 
 .customContainer {
   position: absolute;
-  width: 150px;
+  width: auto;
   height: 50vh;
-  left: 15px;
-  top: 44vh;
+  left: 10px;
+  top: 80px;
   li {
-    margin-bottom: 10px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 16px;
-    font-weight: 400;
-
+    font-weight: 700;
+    // text-transform: uppercase;
+    margin-right: 30px;
+    border-radius: 4px;
+    color: #000000;
   }
 }
 
 
 .faceContainer{
-  height: 70vh;
-  svg  {
+  height: 90vh;
+  .faceimg  {
     height: 400px;
     width: 400px;
     margin: 0 auto;
+    margin-top: 40px;
     display: block;
     .beardsList, 
     .glassesList,
     .hairstylesList,
     .accessoriesList,
-    .piercingList,
+    .piercingsList,
     .hatsList {
       display: none;
+      .rayban {
+        display: block;
+      }
     }
   }
-}
+};
+
 
 
 .face {
-  fill: none;
   stroke-width: 3px;
   stroke: #000;
+  fill: rgb(255, 255, 255);
 }
 
 .glasses,
@@ -46,7 +68,7 @@
 .lunette_ingenieur{
   stroke: #000;
   stroke-width: 2px;
-  fill: #000;
+  fill: rgb(0, 0, 0);
 }
 
 .rich-hairstyles,
@@ -109,23 +131,27 @@
   height: 30vh;
   width: 100%;
   display: flex;
+  overflow: scroll;
   li {
-    border: solid 1px rgb(0, 0, 0);
-    border-collapse: collapse;
+    // border: solid 1px rgb(0, 0, 0);
+    // border-collapse: collapse;
     // background-color: rgb(172, 172, 172);
     svg {
-      width: 200px;
-      height: 100%;
+      // border: solid 1px black;
+      padding: 2px 20px;
+      width: 100px;
+      height: 90%;
+      border-collapse: collapse;
+      
     }
+    
   }
 }
+
+
+
 
 .visible {
   display: block;
 }
 
-.beardsChoice{
-  svg {
-    display: block;
-  }
-}

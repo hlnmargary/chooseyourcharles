@@ -207,6 +207,7 @@
 
 
 <body>
+  <div class="bigstokes"></div>
   <ul class="customContainer">
     <li data-nav="hairstyles">Hairstyle</li>
     <li data-nav="beards">Beard</li>
@@ -221,12 +222,12 @@
       <use xlink:href="#face" class="visible"></use>
       <use xlink:href="#mouth" class="mouthImg visible"></use>
       <!-- GLASSES -->
-      <use xlink:href="#glasses" class="glassesList visible" data-style="rayban"></use>
+      <use xlink:href="#glasses" class="glassesList rayban" data-style="rayban"></use>
       <use xlink:href="#lunette_rondes" class="glassesList" data-style="rond"></use>
       <use xlink:href="#ej" class="glassesList" data-style="elton"></use>
       <use xlink:href="#lunette_ingenieur" class="glassesList" data-style="hasbeen"></use>
       <!-- HAIR -->
-      <use xlink:href="#rich-hairstyles" class="hairstylesList visible" data-style="rich"></use>
+      <use xlink:href="#rich-hairstyles" class="hairstylesList" data-style="rich"></use>
       <use xlink:href="#punk" class="hairstylesList" data-style="punk"></use>
       <use xlink:href="#mi-long" class="hairstylesList" data-style="milong"></use>
       <use xlink:href="#afro" class="hairstylesList" data-style="afro"></use>
@@ -235,16 +236,16 @@
       <use xlink:href="#beardy" class="beardsList" data-style="beardy"></use>
       <use xlink:href="#gros_bouc" class="beardsList" data-style="bouc"></use>
       <use xlink:href="#rouflaquettes" class="beardsList" data-style="rouflaquettes"></use>
-      <use xlink:href="#beard" class="beardsList" data-style="charles"></use>
+      <use xlink:href="#beard" class="beardsList charles" data-style="charles"></use>
       <use xlink:href="#moustache_italiano" class="beardsList" data-style="italian"></use>
       <!-- ACCESSORIES -->
       <use xlink:href="#cigarette" class="accessoriesList" data-style="cigarette"></use>
       <!-- PIERCINGS -->
-      <use xlink:href="#piercing-right" class="piercingsList visible" data-style="rightpiercing"></use>
+      <use xlink:href="#piercing-right" class="piercingsList" data-style="rightpiercing"></use>
       <use xlink:href="#piercing-nose" class="piercingsList" data-style="nosepiercing"></use>
       <!-- HATS -->
       <use xlink:href="#chapeau_noir" class="hatsList" data-style="blackhat"></use>
-      <use xlink:href="#bonnet" class="hatsList visible" data-style="beanie"></use>
+      <use xlink:href="#bonnet" class="hatsList" data-style="beanie"></use>
       <use xlink:href="#casquette" class="hatsList" data-style="cap"></use>
       <!-- MOUTH -->
       <use xlink:href="#mouth" class="mouthImg visible"></use>
@@ -254,56 +255,81 @@
   <!-- BEARDS CONTAINER -->
 
   <ul id="itemContainer" class="beardsContainer" data-container="beards">
+    <li class="beardsChoice nobeard" data-choice="nobeard">
+      <svg aria-hidden="true" viewBox="0 20 412.76 600.34">
+        <use xlink:href="#face" class="visible"></use>
+      </svg>
+    </li>
     <li class="beardsChoice beardy" data-choice="beardy">
-      <svg aria-hidden="true" viewBox="0 0 412.76 585.83">
+      <svg aria-hidden="true" viewBox="0 20 412.76 600.34">
+        <use xlink:href="#face" class="visible"></use>
         <use xlink:href="#beardy"></use>
       </svg>
     </li>
     <li class="beardsChoice bouc" data-choice="bouc">
-      <svg aria-hidden="true" viewBox="0 0 412.76 585.83">
+      <svg aria-hidden="true" viewBox="0 20 412.76 600.34">
+        <use xlink:href="#face" class="visible"></use>
         <use xlink:href="#gros_bouc"></use>
       </svg>
     </li>
     <li class="beardsChoice rouflaquettes" data-choice="rouflaquettes">
-      <svg aria-hidden="true" viewBox="0 0 412.76 585.83">
+      <svg aria-hidden="true" viewBox="0 20 412.76 600.34">
+        <use xlink:href="#face" class="visible"></use>
         <use xlink:href="#rouflaquettes"></use>
       </svg>
     </li>
     <li class="beardsChoice charles" data-choice="charles">
-      <svg aria-hidden="true" viewBox="0 0 412.76 585.83">
+      <svg aria-hidden="true" viewBox="0 20 412.76 600.34">
+        <use xlink:href="#face" class="visible"></use>
         <use xlink:href="#beard"></use>
       </svg>
     </li>
     <li class="beardsChoice italian" data-choice="italian">
-      <svg aria-hidden="true" viewBox="0 0 412.76 585.83">
+      <svg aria-hidden="true" viewBox="0 20 412.76 600.34">
+        <use xlink:href="#face" class="visible"></use>
         <use xlink:href="#moustache_italiano"></use>
       </svg>
     </li>
   </ul>
   <!-- HAIRSTYLES CONTAINER -->
   <ul id="itemContainer" class="hairstylesContainer" data-container="hairstyles">
+    <li class="hairstylesChoice" data-choice="nohair">
+      <svg aria-hidden="true" viewBox="0 20 412.76 600.34">
+        <use xlink:href="#face" class="visible"></use>
+      </svg>
+    </li>
     <li class="hairstylesChoice" data-choice="rich">
-      <svg aria-hidden="true" viewBox="0 0 412.76 585.83">
+      <svg aria-hidden="true" viewBox="0 20 412.76 600.34">
+        <use xlink:href="#face" class="visible"></use>
+        <use xlink:href="#mouth" class="mouthImg visible"></use>
         <use xlink:href="#rich-hairstyles"></use>
       </svg>
     </li>
     <li class="hairstylesChoice" data-choice="punk">
-      <svg aria-hidden="true" viewBox="0 0 412.76 585.83">
+      <svg aria-hidden="true" viewBox="0 20 412.76 600.34">
+        <use xlink:href="#face" class="visible"></use>
+        <use xlink:href="#mouth" class="mouthImg visible"></use>
         <use xlink:href="#punk"></use>
       </svg>
     </li>
     <li class="hairstylesChoice" data-choice="milong">
-      <svg aria-hidden="true" viewBox="0 0 412.76 585.83">
+      <svg aria-hidden="true" viewBox="0 20 412.76 600.34">
+        <use xlink:href="#face" class="visible"></use>
+        <use xlink:href="#mouth" class="mouthImg visible"></use>
         <use xlink:href="#mi-long"></use>
       </svg>
     </li>
     <li class="hairstylesChoice" data-choice="afro">
-      <svg aria-hidden="true" viewBox="0 0 412.76 585.83">
+      <svg aria-hidden="true" viewBox="0 20 412.76 600.34">
+        <use xlink:href="#face" class="visible"></use>
+        <use xlink:href="#mouth" class="mouthImg visible"></use>
         <use xlink:href="#afro"></use>
       </svg>
     </li>
     <li class="hairstylesChoice" data-choice="swag">
-      <svg aria-hidden="true" viewBox="0 0 412.76 585.83">
+      <svg aria-hidden="true" viewBox="0 20 412.76 600.34">
+        <use xlink:href="#face" class="visible"></use>
+        <use xlink:href="#mouth" class="mouthImg visible"></use>
         <use xlink:href="#hairstyle-swag"></use>
       </svg>
     </li>
@@ -312,23 +338,32 @@
   <!-- GLASSES CONTAINER -->
 
   <ul id="itemContainer" class="glassesContainer" data-container="glasses">
+    <li class="glassesChoice" data-choice="noglasses">
+      <svg aria-hidden="true" viewBox="0 20 412.76 600.34">
+        <use xlink:href="#face" class="visible"></use>
+      </svg>
+    </li>
     <li class="glassesChoice" data-choice="rayban">
-      <svg aria-hidden="true" viewBox="0 0 412.76 585.83">
+      <svg aria-hidden="true" viewBox="0 20 412.76 600.34">
+        <use xlink:href="#face" class="visible"></use>
         <use xlink:href="#glasses"></use>
       </svg>
     </li>
     <li class="glassesChoice" data-choice="rond">
-      <svg aria-hidden="true" viewBox="0 0 412.76 585.83">
+      <svg aria-hidden="true" viewBox="0 20 412.76 600.34">
+        <use xlink:href="#face" class="visible"></use>
         <use xlink:href="#lunette_rondes"></use>
       </svg>
     </li>
     <li class="glassesChoice" data-choice="elton">
-      <svg aria-hidden="true" viewBox="0 0 412.76 585.83">
+      <svg aria-hidden="true" viewBox="0 20 412.76 600.34">
+        <use xlink:href="#face" class="visible"></use>
         <use xlink:href="#ej"></use>
       </svg>
     </li>
     <li class="glassesChoice" data-choice="hasbeen">
-      <svg aria-hidden="true" viewBox="0 0 412.76 585.83">
+      <svg aria-hidden="true" viewBox="0 20 412.76 600.34">
+        <use xlink:href="#face" class="visible"></use>
         <use xlink:href="#lunette_ingenieur"></use>
       </svg>
     </li>
@@ -337,18 +372,26 @@
   <!-- HATS CONTAINER -->
 
   <ul id="itemContainer" class="hatsContainer" data-container="hats">
-    <li class="hatsChoice" data-choice="blackhat"></li>
-    <svg aria-hidden="true" viewBox="0 0 412.76 585.83">
-      <use xlink:href="#chapeau_noir"></use>
-    </svg>
+    <li class="hatsChoice" data-choice="nohats">
+      <svg aria-hidden="true" viewBox="0 20 412.76 600.34">
+        <use xlink:href="#face" class="visible"></use>
+      </svg>
+    </li>
+    <li class="hatsChoice" data-choice="blackhat">
+      <svg aria-hidden="true" viewBox="0 20 412.76 600.34">
+        <use xlink:href="#face" class="visible"></use>
+        <use xlink:href="#chapeau_noir"></use>
+      </svg>
     </li>
     <li class="hatsChoice" data-choice="beanie">
-      <svg aria-hidden="true" viewBox="0 0 412.76 585.83">
+      <svg aria-hidden="true" viewBox="0 20 412.76 600.34">
+        <use xlink:href="#face" class="visible"></use>
         <use xlink:href="#bonnet"></use>
       </svg>
     </li>
     <li class="hatsChoice" data-choice="cap">
-      <svg aria-hidden="true" viewBox="0 0 412.76 585.83">
+      <svg aria-hidden="true" viewBox="0 20 412.76 600.34">
+        <use xlink:href="#face" class="visible"></use>
         <use xlink:href="#casquette"></use>
       </svg>
     </li>
@@ -357,8 +400,14 @@
   <!-- ACCESSORIES CONTAINER -->
 
   <ul id="itemContainer" class="accessoriesContainer" data-container="accessories">
+    <li class="accessoriesChoice" data-choice="noaccessories">
+      <svg aria-hidden="true" viewBox="0 20 412.76 600.34">
+        <use xlink:href="#face" class="visible"></use>
+      </svg>
+    </li>
     <li class="accessoriesChoice" data-choice="cigarette">
       <svg aria-hidden="true" viewBox="0 0 412.76 585.83">
+        <use xlink:href="#face" class="visible"></use>
         <use xlink:href="#cigarette"></use>
       </svg>
     </li>
@@ -368,13 +417,21 @@
   <!-- PIERCINGS CONTAINER -->
 
   <ul id="itemContainer" class="piercingsContainer" data-container="piercings">
+    <li class="piercingsChoice" data-choice="nopiercing">
+      <svg aria-hidden="true" viewBox="0 20 412.76 600.34">
+        <use xlink:href="#face" class="visible"></use>
+      </svg>
+    </li>
     <li class="piercingsChoice" data-choice="rightpiercing">
+
       <svg aria-hidden="true" viewBox="0 0 412.76 585.83">
+        <use xlink:href="#face" class="visible"></use>
         <use xlink:href="#piercing-right"></use>
       </svg>
     </li>
     <li class="piercingsChoice" data-choice="nosepiercing">
       <svg aria-hidden="true" viewBox="0 0 412.76 585.83">
+        <use xlink:href="#face" class="visible"></use>
         <use xlink:href="#piercing-nose"></use>
       </svg>
     </li>

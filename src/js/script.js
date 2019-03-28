@@ -16,8 +16,17 @@ var customList = document.querySelectorAll('.customContainer li');
 var itemContainers = document.querySelectorAll('#itemContainer');
 
 
+document.querySelector('.rayban').style.display = "block";
+document.querySelector('.charles').style.display = "block";
+document.querySelector('.hairstylesContainer').style.display = "none";
+document.querySelector('.beardsContainer').style.display = "none";
+document.querySelector('.hatsContainer').style.display = "none";
+document.querySelector('.glassesContainer').style.display = "none";
+document.querySelector('.accessoriesContainer').style.display = "none";
+document.querySelector('.piercingsContainer').style.display = "none";
 
-// itemContainers.style.display = "none";
+
+
 
 function setCharles(choiceList, styleList) {
   for (let i = 0; i < choiceList.length; i++) {
