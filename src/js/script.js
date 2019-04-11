@@ -16,6 +16,7 @@ var customList = document.querySelectorAll('.customContainer li');
 var itemContainers = document.querySelectorAll('#itemContainer');
 
 
+
 document.querySelector('.rayban').style.display = "block";
 document.querySelector('.charles').style.display = "block";
 document.querySelector('.hairstylesContainer').style.display = "none";
@@ -24,8 +25,6 @@ document.querySelector('.hatsContainer').style.display = "none";
 document.querySelector('.glassesContainer').style.display = "none";
 document.querySelector('.accessoriesContainer').style.display = "none";
 document.querySelector('.piercingsContainer').style.display = "none";
-
-
 
 
 function setCharles(choiceList, styleList) {
@@ -59,8 +58,10 @@ for (let i = 0; i < customList.length; i++) {
       console.log('kfkjhgnkj');
       if (customList[i].dataset.nav === itemContainers[j].dataset.container) {
         itemContainers[j].style.display = "flex";
+        itemContainers[j].style.transition = "all 2s";
       } else {
         itemContainers[j].style.display = "none";
+        itemContainers[j].style.transition = "all 2s";
       }
     }
   })
